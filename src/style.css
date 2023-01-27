@@ -1,0 +1,96 @@
+/* https://colorhunt.co/palette/2d033b810ca8c147e9e5b8f4 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html {
+  background-color: #1e1e1e;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+body { margin: 20px; padding: 0; display: flex; justify-content: center;}
+button {
+  border: 0;
+  color: white;
+  background-color: #1e1e1e;
+  border-radius: 0.25rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+.container {
+  border: 2px solid #810CA8;
+  border-radius: 20px;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container p {
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
+.params {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.params > * {
+  margin: 5px;
+}
+.button-wraper {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.selected {
+  color: black;
+  background-color: #C147E9;
+}
+.display-code {
+  text-align: center;
+}
+.digits {
+  appearance: none;
+  border-radius: 20px;
+  background-color: #810CA8;
+  margin-bottom: 20px;
+}
+.digits:hover {
+  background-color: #810ca8a7;
+}
+.btn {
+  
+  width: 100%;
+  border: 1px solid #810CA8;
+  padding: 10px;
+  margin: 5px;
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.btn:hover {
+  background-color: #810CA8;
+}
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+  .btn {
+    width: 100px;
+    border: 1px solid #810CA8;
+    padding: 10px;
+    margin: 3px;
+  }
+  .button-wraper {
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 40px;
+  }
+}

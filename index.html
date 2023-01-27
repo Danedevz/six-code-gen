@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+  <title>code-generator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="result">
+      <h1 class="display-code"></h1>
+    </div>
+    <div class="params">
+      <label for="digits">Code length: <span class="index">6</span> digit(s)</label>
+      <input type="range" class="digits" name="digits" id="digits" value="1" min="1" max="6" step="1">
+      <label for="methods">Methods</label>
+      <div class="button-wraper" id="methods">
+        <button class="btn btn-method">Pi</button>
+        <button class="btn btn-method">Tau</button>
+        <button class="btn btn-method">Euler</button>
+        <button class="btn btn-method">Fibonacci</button>
+        <button class="btn btn-method">Golden Ratio</button>
+        <button class="btn btn-method">Random Method</button>
+        <button class="btn btn-method">Random Number</button>
+      </div>
+      <div class="button-wraper">
+        <button class="btn btn-submit">Generate!</button>
+        <button class="btn btn-copy">Copy code</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./script/script.js"></script>
+</html>
