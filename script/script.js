@@ -44,8 +44,12 @@ const copyBtn = document.querySelector(".btn-copy");
 copyBtn.addEventListener("click", () => {
   const display = document.querySelector(".display-code");
   if (display.innerHTML.length > 0) {
-    navigator.clipboard.writeText(display.innerText);
-    alert(`the code ${display.innerText} has been copied`);
+    navigator.clipboard.writeText(display.innerText)
+    .then(() => {
+      alert(`the code ${display.innerText} has been copied`);
+    }).catch(() => {
+      alert(`Something went wrong`);
+    });
   }
 });
 
