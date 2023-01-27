@@ -22,3 +22,5 @@ A convenient web to create 1-6 digit(s) random number with various randomizer me
 ## **Random Number**
 >Generates number randomly with Javascript built-in random function
 
+<br>
+Feel free to suggest another randomizer method! :D

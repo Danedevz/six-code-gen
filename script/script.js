@@ -69,7 +69,6 @@ function fetchCode(method) {
       const randomizer = Math.floor(
         Math.random() * (6 - 1)
       ) + 1;
-      console.log(methodList[(randomizer-1)])
       return fetchCode(methodList[(randomizer-1)]);
     case "Random Number":
       const randomList = []
